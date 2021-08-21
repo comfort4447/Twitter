@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/TwitterProject/Portfolio/css/index.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <section id="header">
+            <img src="images/Abisola-removebg-preview.png" class="image" >
+            <div class="container">
+                <img src="images/logo.png" class="logo" alt="logo" width="300px">
+            </div>
+            <div class="header-text">
+                <h2>Hello, my name is</h2>
+                <h1>Tayo Abisola Comfort</h1>
+                <p>
+                    PIIS Development Team
+                    </p>
+                    <button type="button" class="button">Read More</button>
+            </div>
+        </section>
+        <nav id="side-nav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" id="menu-toggle">
+        <script type="text/javascript">
+            var menu_toggle = document.getElementById("menu-toggle")
+            var side_nav = document.getElementById("side-nav")
+            side_nav.style.right = "-250px";
+            menu_toggle.onclick = function(){
+                if(side_nav.style.right == "-250px"){
+                    side_nav.style.right = "0"
+                }else{
+                    side_nav.style.right = "-250px";
+                }
+            }
+        </script>
+        <button onclick="topFunction()"  id="back-to-top">&#8593;</button>
+        <script type="text/javascript" id="top-to-bottom">
+                let backToTop = document.getElementById("back-to-top");
+
+                    window.onscroll = function(){
+                    scrollFunction();
+                }
+
+
+                    function scrollFunction(){
+                    if (document.documentElement.scrollTop > 20){
+                    backToTop.style.visibility = "visible";
+                } else {
+                        backToTop.style.visibility = "hidden";
+                    }
+            }
+
+ function topFunction(){
+document.documentElement.scrollTop = 0;
+}
+        </script>
+
+        <section id="about">
+            <div class="intro">
+                <h2>About me</h2>
+                <span></span>
+            </div>
+            <div class="about-me-row">
+                <div class="about-me-col">
+                    <img src="images/Abisola-removebg-preview.png" width="500px" alt="Abisola">
+                </div>
+                <div class="about-me-col">
+                    <div class="about-me-text">
+                        <div class="text-1">...With great power comes great responsibility
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <button class="btn" type="button">Learn More</button>
+                    </div>
+                </div>   
+            </div>
+        </section>
+        <section id="services">
+            <div class="intro">
+                <h2>Our Services</h2>
+                <span></span>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="coloumn1">
+                        <img src="images/web.png" width="500px" height="200px">
+                        <h3>Web Development</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column3">
+                        <img src="images/uiux.png" width="500px" height="200px">
+                        <h3>UI/UX Design</h3>
+                    </div>
+                </div>
+            </div>
+            <section id="contact">
+                <div class="intro">
+                    <h2>Contact</h2>
+                    <span></span>
+                </div>
+                <div class="contact-us-row">
+                    <div class="contact-us-col">
+                        <div class="contact-us-text">
+                            <div class="text-1">...We would love to hear from you!!!
+                                <form-control class="form-control">
+                                    <form class="form">
+                                        <input type="text" placeholder="FirstName" id="fullname" required>
+                                        <input type="email" placeholder="Email" id="email" required>
+                                        <textarea name="text-area" rows="4" cols="50"></textarea><br>
+                                        <button class="btn" type="button">Submit</button>
+                                    </form>
+                                </form-control>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="contact-us-col">
+                        <img src="images/contact-removebg-preview.png" width="500px" alt="Abisola">
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-container">
+                    <div class="footer">
+                        <div class="footer-heading footer-1">
+                            <h2>About Us</h2>
+                            <a href="#">Blog</a>
+                            <a href="#">Demo</a>
+                            <a href="#">Customer</a>
+                            <a href="#">Investors</a>
+                        </div>
+                        <div class="footer-heading footer-2">
+                            <h2>Contact Us</h2>
+                            <a href="#">Jobs</a>
+                            <a href="#">Support</a>
+                            <a href="#">Cotact</a>
+                        </div>
+                        <div class="footer-heading footer-2">
+                            <h2>Social Media</h2>
+                            <a href="#">Twitter</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>
